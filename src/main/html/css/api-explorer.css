@@ -194,7 +194,7 @@
 }
 
 .swagger-section .operation.post .http_method a, .swagger-section .operation.post .http_method span {
-    background: #01b48f
+    background: #1fd9b9
 }
 
 .swagger-section .operation.delete .http_method a, .swagger-section .operation.delete .http_method span {
@@ -447,7 +447,7 @@
 
 .swagger-section .operations .model-signature .description .objectName .bracketsIcon {
     opacity: .7;
-    font-family: Menlo, monospace;
+    font-family: "Roboto",sans-serif;
     font-size: 11px
 }
 
@@ -458,7 +458,7 @@
     border: 1px solid;
     font-weight: 400;
     font-size: 10px;
-    font-family: Menlo, monospace;
+    font-family: "Roboto",sans-serif;
     position: relative;
     top: -1px;
     left: 5px;
@@ -1648,13 +1648,13 @@ body {
 
 .swagger-section .swagger-ui-wrap {
     line-height: 1;
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-left: auto;
     margin-right: auto
 }
 
 .swagger-section .swagger-ui-wrap b, .swagger-section .swagger-ui-wrap strong {
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700
 }
 
@@ -1795,7 +1795,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap .model-signature {
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 1em;
     line-height: 1.5em
 }
@@ -1850,7 +1850,7 @@ body {
     font-size: 1.5em;
     line-height: 1.3em;
     padding: 10px 0;
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-weight: 700
 }
 
@@ -1887,7 +1887,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap form.formtastic fieldset.inputs ol li.text textarea {
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto",sans-serif;
     height: 250px;
     padding: 4px;
     display: block;
@@ -1967,7 +1967,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap ul#resources {
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: .9em
 }
 
@@ -2154,7 +2154,7 @@ body {
     padding: 10px 0;
     font-size: .8em;
     border-top: 1px solid #ddd;
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto",sans-serif;
     color: #999;
     font-style: italic
 }
@@ -2171,7 +2171,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap .markdown ol, .swagger-section .swagger-ui-wrap .markdown ul {
-    font-family: proxima-nova, sans-serif;
+    font-family: "Roboto",sans-serif;
     margin: 5px 0 10px;
     padding: 0 0 0 18px;
     list-style-type: disc

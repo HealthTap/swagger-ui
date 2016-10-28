@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.ht-logo {
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 37px;
+  vertical-align: middle;
+  width: 126px;
+  padding: 1px;
+  background-size: cover;
+  margin-left: 20px;
+}
+
 .color {
     background: #f00;
     border-radius: 3px;
@@ -56,7 +68,7 @@
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
-    font-family: sans-serif;
+    font-family: font-family: "Roboto",sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 }
@@ -1136,7 +1148,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #333;
@@ -1576,7 +1588,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-family: "Roboto",sans-serif;
 }
 code {
     padding: 2px 4px;
@@ -3956,7 +3968,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-    text-decoration: none;
+    text-decoration: underline;
     background-color: #eee;
 }
 .nav > li.disabled > a {
@@ -5910,7 +5922,7 @@ button.close {
     position: absolute;
     z-index: 1070;
     display: block;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 12px;
     font-weight: normal;
     line-height: 1.4;
@@ -6017,7 +6029,7 @@ button.close {
     display: none;
     max-width: 276px;
     padding: 1px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto",sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42857143;
@@ -15470,7 +15482,7 @@ header.site-header.site-header nav .navbar-brand {
     width: 70px;
 }
 header.site-header.site-header nav .navbar-brand a {
-    background: url("../images/senodio.png") center left no-repeat;
+    /* background: url("../images/senodio.png") center left no-repeat; */
     /*background-size: 76%;*/
     width: 130px;
     height: 40px;
@@ -15904,12 +15916,12 @@ a.btn.btn-danger {
 }
 .btn.btn-primary,
 a.btn.btn-primary {
-    background-color: #44c7f4;
+    background-color: #1fd9b9;
     border-color: transparent;
 }
 .btn.btn-primary:hover,
 a.btn.btn-primary:hover {
-    background-color: #0c9dce;
+    background-color: #179e86;
 }
 .btn:active,
 a.btn:active {
@@ -16041,7 +16053,7 @@ body {
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+    font-family: "Roboto",sans-serif;
     color: #4d4d4d;
 }
 h1,
@@ -16050,7 +16062,7 @@ h3,
 h4,
 h5 {
     line-height: 1.5;
-    font-family: "proxima-nova", "Helvetica Neue", sans-serif;
+    font-family: "Roboto",sans-serif;
     color: #000;
     font-weight: 400;
 }
@@ -16115,7 +16127,7 @@ a:focus {
     outline: 0;
 }
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #032d3b;
 }
 pre {
