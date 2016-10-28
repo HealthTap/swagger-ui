@@ -141,7 +141,8 @@
 }
 
 .swagger-section .heading .path {
-    display: table-cell
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .swagger-section .heading .path a {
@@ -170,7 +171,8 @@
 }
 
 .swagger-section .heading .http_method {
-    display: table-cell
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .swagger-section .heading .http_method a {
@@ -302,6 +304,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left;
 }
 
 @media (min-width: 992px) {
@@ -312,7 +315,7 @@
         display: inline-block;
         width: 150px;
         vertical-align: top;
-        text-align: right;
+        text-align: left;
         padding: 0 20px
     }
 }
@@ -2048,7 +2051,7 @@ body {
 }
 
 .swagger-section .swagger-ui-wrap ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation div.heading h3 span.path {
-    padding-left: 10px
+    padding: 0 0 0 10px
 }
 
 .swagger-section .swagger-ui-wrap ul#resources li.resource ul.endpoints li.endpoint ul.operations li.operation div.heading h3 span.path a:hover {
