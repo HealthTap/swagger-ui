@@ -79,6 +79,7 @@
                     $("[data-toggle='tooltip']").tooltip();
 
                     addApiKeyAuthorization();
+                    $('.help-div').append('<div class="help-link">Need help? <a class="link" href="http://documentation.healthtap.com/discuss">Get support!</a></div><div class="contact-link">Get access to more APIs! <a href="mailto:developer.support@healthtap.com">Contact us!</a></div>');
                 },
                 onFailure: function (data) {
                     log("Unable to Load SwaggerUI");
