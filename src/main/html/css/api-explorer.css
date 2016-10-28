@@ -1377,7 +1377,7 @@
 
 @media (min-width: 992px) {
     .changes-disclaimer {
-        display: block
+        display: none
     }
 }
 
