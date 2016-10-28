@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 .ht-cloud-logo {
   background-image: url(../images/healthtap_api_reference.png);
   background-repeat: no-repeat;
@@ -4146,7 +4147,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
     position: relative;
-    min-height: 50px;
+    min-height: auto;
     margin-bottom: 20px;
     border: 1px solid transparent;
 }
@@ -15440,6 +15441,37 @@ header.site-header.site-header.header-fixed {
 header.site-header.site-header a {
     color: #333;
 }
+.btn.pred-btn{
+    color: white !important;
+    background-color: #db4c3f !important;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 4px !important;
+    border: none !important;
+    padding: 0 10px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+div.btn.pred-btn{
+    width: 45px;
+}
+
+.btn.pred-btn.outline-pred{
+    color: #db4c3f !important;
+    background-color: white !important;
+    border: 1px solid #db4c3f !important;
+    line-height: 30px;
+    height: 30px;
+}
+
+.btn.pred-btn:hover{
+    background-color: #c13225 !important;
+    color: white !important;
+}
+
 header.site-header.site-header li * {
     -webkit-backface-visibility: hidden !important;
 }
@@ -15447,7 +15479,8 @@ header.site-header.site-header .navbar-header {
     margin-right: -15px;
     margin-left: -15px;
     float: none;
-    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
 }
 @media (min-width: 992px) {
     header.site-header.site-header .navbar-header {
@@ -15482,7 +15515,7 @@ header.site-header.site-header nav .navbar-brand {
     width: 70px;
 }
 header.site-header.site-header nav .navbar-brand a {
-    /* background: url("../images/senodio.png") center left no-repeat; */
+    /*background: url("../images/senodio.png") center left no-repeat;*/
     /*background-size: 76%;*/
     width: 130px;
     height: 40px;
@@ -15909,7 +15942,7 @@ a.btn.btn-default {
 }
 .btn.btn-default:hover,
 a.btn.btn-default:hover {
-    color: #179e86;
+  color: #179e86;
 }
 .btn.btn-danger,
 a.btn.btn-danger {

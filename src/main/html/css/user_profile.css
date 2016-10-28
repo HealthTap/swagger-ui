@@ -1,24 +1,30 @@
 .help-div{
-	padding-left: 30px;
 	font-size: 14px;
-	line-height: 30px;
-	padding-top: 40px;
+	line-height: 37px;
+	padding: 0 0 0 30px;
 	box-sizing: border-box;
-	padding-bottom: 40px;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 30px;
+	top: 0;
 }
-@media (max-width: 991px) {
-	.help-div{
-		width: 290px;
-	}
+
+.help-div .contact-link{
+	display: inline-block;
+	padding-right: 30px
 }
-.help-div a{
+
+header.site-header.site-header .help-div div a{
 	color: #1bd5b5;
 	cursor: pointer;
 }
-.help-div a:hover{
+header.site-header.site-header .help-div div a:hover{
 	text-decoration: none;
 	color: #179e86;
 }
+
 .swagger-section pre{
 	background-color: #363D44;
 }

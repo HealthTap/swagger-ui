@@ -63,7 +63,7 @@
 }
 
 .swagger-section .operations {
-    padding: 20px 0 0
+    padding: 0 0
 }
 
 .swagger-section .operation {
@@ -72,7 +72,7 @@
 
 @media (min-width: 992px) {
     .swagger-section .operation {
-        min-height: 100vh
+        min-height: auto
     }
 
     .swagger-section .operation:after {
@@ -188,7 +188,36 @@
 .swagger-section .action-summary {
     margin: 0;
     padding: 20px;
-    color: #838991
+    color: #565656;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+.swagger-section .profile-item{
+    padding: 5px 0;
+}
+
+.swagger-section .profile-item.profile-title-wrap,.swagger-section .profile-item:last-child{
+    border-bottom: 1px solid #ccc;
+}
+
+.swagger-section .profile-item .profile-property, .swagger-section .profile-item .profile-description {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
+}
+
+.swagger-section .profile-item .profile-property{
+    width: 35%;
+}
+
+.swagger-section .profile-item .profile-description{
+    width: 55%;
+}
+
+.swagger-section .profile-item .profile-title{
+    font-weight: 600;
 }
 
 .swagger-section .operation.get .http_method a, .swagger-section .operation.get .http_method span {
@@ -288,7 +317,7 @@
 @media (min-width: 992px) {
     .swagger-section .parameter-item .param-property {
         position: relative;
-        padding-left: 150px
+        padding-left: 200px
     }
 
     .swagger-section .parameter-item .param-property:hover {
@@ -313,7 +342,7 @@
         top: 28px;
         left: 0;
         display: inline-block;
-        width: 150px;
+        width: 200px;
         vertical-align: top;
         text-align: left;
         padding: 0 20px
@@ -368,7 +397,8 @@
         color: #fff;
         text-transform: uppercase;
         letter-spacing: .08em;
-        font-size: 14px
+        font-size: 14px;
+        line-height: 1;
     }
 }
 
@@ -379,14 +409,14 @@
 }
 
 .swagger-section .operations .model-signature .description {
-    background: #5c666f;
-    padding-bottom: 15px;
-    color: #fff
+    background: #363D44;
+    color: #fff;
+    font-size: 0;
 }
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description {
-        background: #4e575e
+        background: #363D44;
     }
 }
 
@@ -421,7 +451,7 @@
 }
 
 .swagger-section .operations .model-signature .description .objectName {
-    background: #535c64;
+    background: #4e575e;
     display: block;
     font-weight: 700;
     padding: 20px
@@ -429,10 +459,9 @@
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description .objectName {
-        background: #576169;
+        background: #4e575e;
         font-size: 13px;
         padding: 10px 30px;
-        margin-top: 15px
     }
 
     .swagger-section .operations .model-signature .description .objectName:first-child {
@@ -475,7 +504,7 @@
 }
 
 .swagger-section .operations .model-signature .description .propType[title=string] {
-    color: #00fcd4
+    color: #00fcd4;
 }
 
 .swagger-section .operations .model-signature .description .propType[title=boolean], .swagger-section .operations .model-signature .description .propType[title=integer] {
@@ -494,7 +523,8 @@
         left: 0;
         line-height: 1;
         font-size: 9px;
-        padding: 4px 5px
+        padding: 4px 5px;
+        box-sizing: border-box;
     }
 }
 
@@ -505,7 +535,9 @@
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description .propName {
-        display: block
+        display: inline-block;
+        text-align: left;
+        width: 50%;
     }
 }
 
@@ -526,23 +558,20 @@
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description .propDesc {
-        float: right;
-        width: 60%;
-        width: calc(100% - 200px);
+        width: 33.33%;
         padding-left: 20px;
         font-size: 12px;
-        line-height: 1.5
+        line-height: 1.5;
+        box-sizing: border-box;
+        display: inline-block;
     }
 }
 
 @media (min-width: 992px) {
     .swagger-section .operations .model-signature .description .propLabels {
-        text-align: right;
-        text-align: right;
-        display: block;
-        width: 40%;
-        width: calc(200px);
-        float: left;
+        text-align: left;
+        display: inline-block;
+        width: 66.66%;
         font-size: 12px
     }
 }
@@ -615,7 +644,6 @@
         max-height: none;
         min-width: 100%;
         width: 100%;
-        margin-bottom: 30px;
         border-bottom: 1px solid #e8eaeb
     }
 }
@@ -857,14 +885,13 @@
     letter-spacing: .08em;
     font-size: 12px;
     font-weight: 700;
-    color: #1fd9b9;
+    color: #333;
     display: inline-block;
     margin-bottom: 10px
 }
 
 @media (min-width: 992px) {
     .swagger-section .token-generator label {
-        color: #1fd9b9;
         font-size: 13px;
         margin-bottom: 15px
     }
@@ -879,13 +906,12 @@
     box-shadow: inset 0 -1px 0 0 #e8eaeb;
     transition: box-shadow 0 300ms ease;
     min-width: 320px;
-    position: relative
+    position: relative;
 }
 
 @media (min-width: 992px) {
     .swagger-section .operations h4 {
         box-shadow: none;
-        cursor: default
     }
 }
 
@@ -922,7 +948,8 @@
 
 .swagger-section .operations h4:not(.collapsed) {
     box-shadow: inset 0 -1px 0 0 transparent;
-    transition: box-shadow 0 0 ease
+    transition: box-shadow 0 0 ease;
+    line-height: 1;
 }
 
 /* change
@@ -951,6 +978,28 @@
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
+}
+
+.swagger-section .operations h4.sample-title{
+    border-bottom: 1px solid #aaa;
+}
+
+.swagger-section .operations h4.sample-title.collapsed:before,.swagger-section .operations h4.schema-title.collapsed:before{
+    content: "+";
+    padding-right: 10px;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 14px;
+    color: #1bd5b5;
+}
+
+.swagger-section .operations h4.sample-title:not(.collapsed):before,.swagger-section .operations h4.schema-title:not(.collapsed):before{
+    content: "-";
+    padding-right: 10px;
+    line-height: 14px;
+    font-size: 40px;
+    vertical-align: bottom;
+    color: #1bd5b5;
 }
 
 /*
@@ -1128,17 +1177,17 @@
         content: "API Reference";
         text-transform: uppercase;
         letter-spacing: .08em;
-        color: #1fd9b9;
+        color: #333;
         font-size: 13px;
         font-weight: 700;
         margin-bottom: 15px;
-        padding: 0 20px
+        padding: 30px 20px 0
     }
 }
 
 @media (min-width: 992px) {
     .swagger-section .sticky-nav [data-navigator] [data-resource] {
-        cursor: pointer
+        cursor: pointer;
     }
 }
 
@@ -1150,7 +1199,10 @@
 
 @media (min-width: 992px) {
     .swagger-section .sticky-nav [data-navigator] [data-resource].active .item {
-        display: block
+        display: block;
+        line-height: 50px;
+        height: 50px;
+        padding: 0 40px;
     }
 }
 
@@ -1173,7 +1225,15 @@
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0;
-        color: #5c666f
+        color: #444;
+        background-color: #f8f8f9;
+        padding: 0 0 0 30px;
+        height: 50px;
+        line-height: 50px;
+        border-bottom: 1px solid #e4e4e4;
+    }
+    .swagger-section .sticky-nav [data-navigator] [data-resource]:last-child:before {
+        border-bottom: none;
     }
 }
 
@@ -1195,9 +1255,14 @@
 
 @media (min-width: 992px) {
     .swagger-section .sticky-nav [data-navigator] .item {
-        color: #5c666f;
+        color: #888;
         padding: 9px 9px 9px 40px;
         font-size: 14px;
+        background: #fdfdfd;
+        -webkit-transition: color 300ms ease;
+        -moz-transition: color 300ms ease;
+        -o-transition: color 300ms ease;
+        transition: color 300ms ease;
     }
 
     .swagger-section .sticky-nav [data-navigator] .item:active, .swagger-section .sticky-nav [data-navigator] .item:hover {
@@ -1235,13 +1300,13 @@
 
 @media (min-width: 992px) {
     .swagger-section .sticky-nav [data-navigator] .item[data-selected] {
-        background: #f3f3f4;
-        font-weight: 700;
-        color: #333
+        background: white;
+        font-weight: 600;
+        color: #db4c3f;
     }
 
     .swagger-section .sticky-nav [data-navigator] .item[data-selected]:active, .swagger-section .sticky-nav [data-navigator] .item[data-selected]:hover {
-        color: #333
+        color: #c53727;
     }
 }
 
@@ -1287,7 +1352,7 @@
 
 @media (min-width: 992px) {
     .swagger-section .sticky-nav.nav-open [data-navigator] {
-        height: auto
+        height: auto;
     }
 }
 
@@ -1379,7 +1444,7 @@
 
 @media (min-width: 992px) {
     .changes-disclaimer {
-        display: none
+        display: none;
     }
 }
 
@@ -1500,7 +1565,7 @@ body {
 }
 
 .swagger-section .endpoint {
-    margin: 0 0 100px
+    margin: 0
 }
 
 @media (min-width: 992px) {
@@ -1650,13 +1715,13 @@ body {
 
 .swagger-section .swagger-ui-wrap {
     line-height: 1;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto",sans-serif;
     margin-left: auto;
     margin-right: auto
 }
 
 .swagger-section .swagger-ui-wrap b, .swagger-section .swagger-ui-wrap strong {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto",sans-serif;
     font-weight: 700
 }
 
