@@ -1,11 +1,11 @@
 @charset "UTF-8";
-.ht-logo {
-  background-image: url(../images/logo.png);
+.ht-cloud-logo {
+  background-image: url(../images/healthtap_api_reference.png);
   background-repeat: no-repeat;
   display: inline-block;
   height: 37px;
   vertical-align: middle;
-  width: 126px;
+  width: 350px;
   padding: 1px;
   background-size: cover;
   margin-left: 20px;
@@ -15844,7 +15844,7 @@ a.btn {
     letter-spacing: 2px;
     border: 0;
     font-weight: bold;
-    border: 1px solid #d0d2d3;
+    border: 1px solid #1fd9b9;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 3px;
@@ -15904,11 +15904,12 @@ a.btn.btn-success:hover {
 .btn.btn-default,
 a.btn.btn-default {
     background: #fff;
-    border-color: #d0d2d3;
+    border-color: #1fd9b9;
+    color: #1fd9b9;
 }
 .btn.btn-default:hover,
 a.btn.btn-default:hover {
-    background: #d0d2d3;
+    color: #179e86;
 }
 .btn.btn-danger,
 a.btn.btn-danger {

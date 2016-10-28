@@ -854,14 +854,14 @@
     letter-spacing: .08em;
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
+    color: #1fd9b9;
     display: inline-block;
     margin-bottom: 10px
 }
 
 @media (min-width: 992px) {
     .swagger-section .token-generator label {
-        color: #5c666f;
+        color: #1fd9b9;
         font-size: 13px;
         margin-bottom: 15px
     }
@@ -1125,7 +1125,7 @@
         content: "API Reference";
         text-transform: uppercase;
         letter-spacing: .08em;
-        color: #5c666f;
+        color: #1fd9b9;
         font-size: 13px;
         font-weight: 700;
         margin-bottom: 15px;
