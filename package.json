@@ -15,6 +15,7 @@
   "license": "Apache 2.0",
   "scripts": {
     "build": "gulp",
+    "postinstall": "npm run build",
     "serve": "gulp serve",
     "prejshint": "gulp",
     "jshint": "jshint .",
