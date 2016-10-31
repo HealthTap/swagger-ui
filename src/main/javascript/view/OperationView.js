@@ -726,6 +726,14 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
   },
 
   toggleSamples: function (e) {
+    function o(t) {
+      if ("self" === t) {
+        var n = $(window).scrollTop();
+        return $(window).scrollTop(n)
+      }
+      return $(window).scrollTop(t)
+    }
+
     var r = $("#resources"),
       n = $(e.currentTarget);
 
