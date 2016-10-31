@@ -94,7 +94,7 @@ gulp.task('less', ['clean'], function() {
 /**
  * Copy lib and html folders
  */
-gulp.task('copy', ['less'], function() {
+gulp.task('copy', ['dist', 'less'], function() {
 
   // copy JavaScript files inside lib folder
   gulp
@@ -133,5 +133,5 @@ function log(error) {
 }
 
 
-gulp.task('default', ['dist', 'copy']);
+gulp.task('default', ['copy']);
 gulp.task('serve', ['connect', 'watch']);
