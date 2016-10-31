@@ -1,15 +1,19 @@
 @charset "UTF-8";
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 .ht-cloud-logo {
-  background-image: url(../images/healthtap_api_reference.png);
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 37px;
-  vertical-align: middle;
-  width: 350px;
-  padding: 1px;
-  background-size: cover;
-  margin-left: 20px;
+    background-image: url(../images/healthtap_api_reference.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 37px;
+    vertical-align: middle;
+    width: 350px;
+    padding: 1px;
+    background-size: cover;
+    margin-left: 20px;
 }
 
 .color {
@@ -6663,11 +6667,11 @@ button.close {
 /*# sourceMappingURL=bootstrap.css.map */
 
 /*
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
+   Animate.css - http://daneden.me/animate
+   Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-Copyright (c) 2015 Daniel Eden
-*/
+   Copyright (c) 2015 Daniel Eden
+ */
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -15910,18 +15914,18 @@ a.btn.btn-lg {
     font-size: 15px;
 }
 /*
-.btn.btn-success,
-a.btn.btn-success {
-    background-color: #eb5424;
-    color: #fff;
-    border-color: transparent;
-}
-.btn.btn-success:hover,
-a.btn.btn-success:hover {
-    background-color: #ae3610;
-    color: #fff;
-}
-*/
+   .btn.btn-success,
+   a.btn.btn-success {
+   background-color: #eb5424;
+   color: #fff;
+   border-color: transparent;
+   }
+   .btn.btn-success:hover,
+   a.btn.btn-success:hover {
+   background-color: #ae3610;
+   color: #fff;
+   }
+ */
 .btn.btn-success,
 a.btn.btn-success {
     background-color: #5cb85c;
@@ -15942,7 +15946,7 @@ a.btn.btn-default {
 }
 .btn.btn-default:hover,
 a.btn.btn-default:hover {
-  color: #179e86;
+    color: #179e86;
 }
 .btn.btn-danger,
 a.btn.btn-danger {
@@ -16155,14 +16159,14 @@ p {
     line-height: 1.8;
 }
 a {
-    color: #0a86b1;
+    color: #1bd5b5;
 }
 a:focus {
     outline: 0;
 }
 a:hover {
-    text-decoration: underline;
-    color: #032d3b;
+    text-decoration: none;
+    color: #179e86;
 }
 pre {
     border: 0;
@@ -17116,8 +17120,13 @@ footer.site-footer .colophon li {
     border-bottom: 0;
 }
 .modal .modal-dialog .modal-header .modal-title {
-    font-weight: bold;
-    text-align: center;
+    font-weight: 600;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #555;
 }
 .modal .modal-dialog .modal-header .close {
     width: 18px;
@@ -17138,11 +17147,19 @@ footer.site-footer .colophon li {
     overflow-y: auto;
     border: 0;
 }
+
+.modal .modal-dialog .modal-body p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+
 .modal .modal-dialog .modal-footer {
     text-align: center;
 }
 .modal .modal-dialog .modal-footer .btn {
     font-size: 11px;
+    border-radius: 30px;
+    margin: 0 10px;
 }
 .modal .modal-dialog button.close {
     background: none;

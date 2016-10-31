@@ -1,6 +1,7 @@
 .swagger-section pre code {
     display: block;
-    padding: .5em
+    padding: .5em;
+    font-family: monospace;
 }
 
 .swagger-section pre .markdown .emphasis {
@@ -221,7 +222,7 @@
 }
 
 .swagger-section .operation.get .http_method a, .swagger-section .operation.get .http_method span {
-    background: #44c7f4
+    background: #db4c3f
 }
 
 .swagger-section .operation.post .http_method a, .swagger-section .operation.post .http_method span {
@@ -1482,7 +1483,10 @@ body {
 }
 
 #api2-explorer .modal pre {
-    border-radius: 3px
+    border-radius: 3px;
+    font-family: monospace;
+    max-height: 400px;
+    overflow: auto;
 }
 
 #api2-explorer .modal .modal-content {
