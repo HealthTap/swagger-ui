@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var path = require('path')
 var es = require('event-stream');
 var clean = require('gulp-clean');
 var concat = require('gulp-concat');
@@ -52,11 +53,15 @@ function templates() {
  * Build a distribution
  */
 gulp.task('dist', ['clean'], function() {
+  var browser_swagger_client_path = path.resolve(
+    path.dirname(require.resolve('swagger-client')),
+    'browser/swagger-client.js'
+  );
 
   return es.merge(
       gulp.src([
         './src/main/javascript/**/*.js',
-        './node_modules/swagger-client/browser/swagger-client.js'
+        browser_swagger_client_path,
       ]),
       templates()
     )
@@ -94,7 +99,7 @@ gulp.task('less', ['clean'], function() {
 /**
  * Copy lib and html folders
  */
-gulp.task('copy', ['less'], function() {
+gulp.task('copy', ['dist', 'less'], function() {
 
   // copy JavaScript files inside lib folder
   gulp
@@ -133,5 +138,5 @@ function log(error) {
 }
 
 
-gulp.task('default', ['dist', 'copy']);
+gulp.task('default', ['copy']);
 gulp.task('serve', ['connect', 'watch']);
