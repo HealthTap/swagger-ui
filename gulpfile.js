@@ -111,7 +111,7 @@ gulp.task('copy', ['dist', 'less'], function() {
 
   // copy all files inside html folder except html
   gulp
-    .src(['./src/main/html/**/*', '!*.html'])
+    .src(['./src/main/html/**/*', '!./src/main/html/**/*.html'])
     .pipe(gulp.dest('./dist'))
     .on('error', log);
 
