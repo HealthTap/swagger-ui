@@ -48,7 +48,7 @@
                 <div id="test-{{parentId}}_{{nickname}}">
                     <div class="sandbox_header collapse in" data-content>
                         <input class="submit btn btn-primary" name="commit" type="submit" value="Try"
-                               data-target="#get_clients-modal-request">
+                               data-target="#get_clients-modal-request" disabled>
                         <a href="#" class="response_hider hide" style="display: inline;">Hide Response</a>
                         <!--small class="curl-copy-message hide" style="display:none;">Copied to clipboard</small-->
                         <!--span class="response_throbber hide" style="display: none;"></span-->
@@ -66,7 +66,7 @@
                         {{/each}}
 
                         {{#oauth}}
-                            <button type="button" class="api-ic ic-off btn btn-default pull-right">Oauth</button>
+                            <button type="button" class="api-ic ic-off btn btn-default pull-right" disabled>Oauth</button>
                         </div>
                         {{/oauth}}
 
