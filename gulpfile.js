@@ -10,6 +10,7 @@ var rename = require('gulp-rename');
 var less = require('gulp-less');
 var handlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
+var template = require('gulp-template');
 var declare = require('gulp-declare');
 var watch = require('gulp-watch');
 var connect = require('gulp-connect');
@@ -100,6 +101,7 @@ gulp.task('less', ['clean'], function() {
  * Copy lib and html folders
  */
 gulp.task('copy', ['dist', 'less'], function() {
+  var prefix = process.env.SWAGGER_DOCS_PREFIX || '/';
 
   // copy JavaScript files inside lib folder
   gulp
@@ -107,11 +109,19 @@ gulp.task('copy', ['dist', 'less'], function() {
     .pipe(gulp.dest('./dist/lib'))
     .on('error', log);
 
-  // copy all files inside html folder
+  // copy all files inside html folder except html
   gulp
-    .src(['./src/main/html/**/*'])
+    .src(['./src/main/html/**/*', '!*.html'])
     .pipe(gulp.dest('./dist'))
     .on('error', log);
+
+  // copy index.html with template
+  gulp
+    .src(['./src/main/html/**/*.html'])
+    .pipe(template({prefix: prefix}))
+    .pipe(gulp.dest('./dist'))
+    .on('error', log);
+
 });
 
 /**
