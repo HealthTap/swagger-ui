@@ -226,7 +226,7 @@
 }
 
 .swagger-section .operation.post .http_method a, .swagger-section .operation.post .http_method span {
-    background: #1fd9b9
+    background: orange
 }
 
 .swagger-section .operation.delete .http_method a, .swagger-section .operation.delete .http_method span {
