@@ -11,6 +11,29 @@
 	top: 0;
 }
 
+.swagger-resource{
+	display: none;
+}
+
+.hidden,.sandbox_header.collapse.in,input.parameter.ui-form-control,.body-textarea.ui-form-control{
+	display: none;
+}
+
+@media screen and (max-width: 835px){
+	.help-div{
+		padding: 10px 0 0 20px;
+		display: block;
+		position: static;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.help-div{
+		display: none;
+	}
+}
+
 .help-div .contact-link{
 	display: inline-block;
 	padding-right: 30px
