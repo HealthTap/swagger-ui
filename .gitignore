@@ -12,6 +12,4 @@ swagger-ui.sublime-workspace
 node_modules/*
 /nbproject/private/
 /dist
-src/main/html/css/screen.css
-src/main/html/css/print.css
-src/main/html/css/reset.css
+src/main/html/css

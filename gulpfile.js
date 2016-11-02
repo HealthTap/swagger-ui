@@ -85,11 +85,7 @@ gulp.task('dist', ['clean'], function() {
 gulp.task('less', ['clean'], function() {
 
   return gulp
-    .src([
-      './src/main/less/screen.less',
-      './src/main/less/print.less',
-      './src/main/less/reset.less'
-    ])
+    .src(['./src/main/less/**/*.less'])
     .pipe(less())
     .on('error', log)
     .pipe(gulp.dest('./src/main/html/css/'))
