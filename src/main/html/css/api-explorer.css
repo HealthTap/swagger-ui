@@ -1175,8 +1175,7 @@
 
     .swagger-section .sticky-nav [data-navigator]:before {
         display: inline-block;
-        content: "API Reference";
-        text-transform: uppercase;
+        content: "SAMPLE APIs";
         letter-spacing: .08em;
         color: #333;
         font-size: 13px;
