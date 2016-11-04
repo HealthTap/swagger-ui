@@ -144,9 +144,9 @@ window.SwaggerUi = Backbone.Router.extend({
     }
     this.renderGFM();
 
-    if (this.options.onComplete){
-      this.options.onComplete(this.api, this);
-    }
+    // if (this.options.onComplete){
+    //   this.options.onComplete(this.api, this);
+    // }
 
     var that= this;
 

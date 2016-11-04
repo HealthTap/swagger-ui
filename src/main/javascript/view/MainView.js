@@ -144,7 +144,8 @@ SwaggerUi.Views.MainView = Backbone.View.extend({
 
     if (window.location.hash.length === 0 ) {
       var n = $(this.el).find("#resources_nav [data-resource]").first();
-      n.trigger("click");
+      var m = n.find(".item").first();
+      m.attr('data-selected','');
       $(window).scrollTop(0)
     }
 
