@@ -10,6 +10,7 @@ var rename = require('gulp-rename');
 var less = require('gulp-less');
 var handlebars = require('gulp-handlebars');
 var wrap = require('gulp-wrap');
+var template = require('gulp-template');
 var declare = require('gulp-declare');
 var watch = require('gulp-watch');
 var connect = require('gulp-connect');
@@ -84,11 +85,7 @@ gulp.task('dist', ['clean'], function() {
 gulp.task('less', ['clean'], function() {
 
   return gulp
-    .src([
-      './src/main/less/screen.less',
-      './src/main/less/print.less',
-      './src/main/less/reset.less'
-    ])
+    .src(['./src/main/less/**/*.less'])
     .pipe(less())
     .on('error', log)
     .pipe(gulp.dest('./src/main/html/css/'))
@@ -100,6 +97,7 @@ gulp.task('less', ['clean'], function() {
  * Copy lib and html folders
  */
 gulp.task('copy', ['dist', 'less'], function() {
+  var prefix = process.env.SWAGGER_DOCS_PREFIX || '/';
 
   // copy JavaScript files inside lib folder
   gulp
@@ -107,18 +105,26 @@ gulp.task('copy', ['dist', 'less'], function() {
     .pipe(gulp.dest('./dist/lib'))
     .on('error', log);
 
-  // copy all files inside html folder
+  // copy all files inside html folder except html
   gulp
-    .src(['./src/main/html/**/*'])
+    .src(['./src/main/html/**/*', '!./src/main/html/**/*.html'])
     .pipe(gulp.dest('./dist'))
     .on('error', log);
+
+  // copy index.html with template
+  gulp
+    .src(['./src/main/html/**/*.html'])
+    .pipe(template({prefix: prefix}))
+    .pipe(gulp.dest('./dist'))
+    .on('error', log);
+
 });
 
 /**
  * Watch for changes and recompile
  */
 gulp.task('watch', function() {
-  return watch(['./src/**/*.{js,less,handlebars}'], function() {
+  return watch(['./src/**/*.{html,js,less,handlebars}'], function() {
     gulp.start('default');
   });
 });
